@@ -1,0 +1,4 @@
+<h2>Photo</h2>
+<% @photos.each do |photo| %>
+<%= image_tag(photo.pic_url, width:'200px') if photo.pic.present? %>
+<% end %>
